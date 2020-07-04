@@ -1,6 +1,6 @@
 <?php
     // include database and object files
-    require_once('inc/database.php');
+    require_once('../inc/database.php');
     require_once('models/contacts_model.php');
 
     $result = array();
@@ -12,16 +12,24 @@
         // $result = $json;
     }
 
+    function checkIfUserExist($data){
+        $res = array();
+        $contactsmodel = new ContactsModel;
+        $res['user'] = $contactsmodel->checkIfUserExist($data->emailaddress);
+        
+        return $res;
+    }
+
     function addContact($data){
         $res = array();
-        $val=array();
+        $val = array();
         $val['name'] = $data->name;
         $val['emailaddress'] = $data->emailaddress;
         $val['password'] = $data->password;
 
         $contactsmodel = new ContactsModel;
         $res['res'] = $contactsmodel->addContact($val);
-
+        
         return $res;
     }
 

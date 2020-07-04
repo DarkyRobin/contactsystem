@@ -2,7 +2,7 @@
 	class Database{
 		private $cn = "";
 		function connect(){
-			$cn = new mysqli("localhost", "root", "", "contascsys_db");
+			$cn = new mysqli("localhost", "root", "", "contactsys_db");
 			$cn->set_charset("utf8");
 
 			if ($cn->connect_error) {

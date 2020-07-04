@@ -1,3 +1,4 @@
+
 async function qryData(apiName = '', apiFn = '', passedData = {}, callback, debug = false) {
 
     // set the return object
@@ -10,7 +11,7 @@ async function qryData(apiName = '', apiFn = '', passedData = {}, callback, debu
     }
   
     // fetch data from API
-    const fetcheddata = await fetch(`${getAPIURL()}${apiName}.php`, {
+    const fetcheddata = await fetch(`api/${apiName}.php`, {
       method: 'POST',
       headers: {
           'Accept': 'application/json',

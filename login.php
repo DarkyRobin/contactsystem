@@ -60,6 +60,7 @@
                     <tr>
                         
                         <td><input type="submit" value="Submit" />
+                            <input type="button" value="Register" onclick="window.location = 'registration.php'"/>
                         
                     </tr>
                 </table>

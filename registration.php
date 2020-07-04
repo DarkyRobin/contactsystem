@@ -13,8 +13,7 @@
 
     <body id="page-top">
         <div id="wrapper">
-            <!-- sidebar -->
-            <?php include_once('inc/sidebar.php');?>
+           
 
             <div id="content-wrapper" class="d-flex flex-column">
 

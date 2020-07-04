@@ -1,5 +1,5 @@
 <div id="registration"  align="center">
-    <h3>Sign In</h3>
+    <h3>Registration</h3>
     <form id="reg-form">
         <table border="0.5" >
             <tr>
@@ -20,9 +20,13 @@
             </tr>
             <tr>
                 
-                <td><input type="button" id="btnSubmit" value="Submit" />
-                
+                <td><input type="button" id="btnRegister" value="Submit" />
+                <input type="button" value="Back to Login" onclick="window.location = 'login.php'"/>
             </tr>
         </table>
     </form>
 </div>
+<div id="thankyou"  align="center">
+<h3>Thank you for registering.</h3>
+<input type="button" value="Continue" onclick="window.location = 'index.php'"/>
+</div
